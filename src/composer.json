@@ -1,0 +1,13 @@
+{
+    "name": "ramunasdronga/apm-agent-php-test",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ramunasdronga\\ApmAgentPhpTest\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/symfony": "^4.4"
+    }
+}

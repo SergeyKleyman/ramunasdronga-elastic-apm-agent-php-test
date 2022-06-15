@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  nginx:
+    image: nginx:1.20-alpine
+    ports:
+      - "8098:80"
+    volumes:
+      - ./src:/src
+      - ./nginx/templates:/etc/nginx/templates
+    environment:
+      - PHP_SERVICE_NAME=fpm
+    depends_on:
+      - fpm
+  fpm:
+    build:
+      context: ./fpm
+    volumes:
+      - ./src:/src
