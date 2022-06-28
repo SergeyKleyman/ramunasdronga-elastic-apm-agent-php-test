@@ -1,0 +1,8 @@
+# Temporary
+_TEMP/
+
+# Generated files
+_GENERATED/
+
+# Local dev
+/z_local_*
